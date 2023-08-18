@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.Hasnain Ali - Graphic Designer - Web Defveloper</title>
+    <link rel="stylesheet" href="boxicons-2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+
+    <div class="scroll-up-btn">
+        <i class="bx bx-up-arrow-alt bx-sm"></i>
+    </div>
+
+
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Smooth scroll */
+html{
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    max-width: 1300px;
+    padding: 0px 100px;
+    margin: auto;
+    z-index: 10;
+}
+.text-secondary{
+    color: #FEC544;
+}
+
+.text-center{
+    text-align: center;
+}
+.m-heading{
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+/* .menu-btn{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+} */
+
+/* .list{
+    margin: 16px 0;
+    list-style: none;
+}
+
+.list li{
+    padding: 8px 0;
+}
+
+.list li span{
+    padding-left: 50px;
+} */
+
+.btn-md{
+    display: inline-block;
+    background: #FEC544;
+    color: #08080A;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px 36px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 2px solid #FEC544;
+    transition: all 0.3s ease;
+}
+.btn-md:hover{
+    color: #FEC544;
+    background: none;
+}
+
+.title::before{
+    content: '';
+    background: #07080B;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(44px);
+}
+
+.title::after{
+    content: '';
+    background: #07080B;
+    height: 7px;
+    width: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(1px);
+}
+
+.showcase{
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 35px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+.navbar.sticky{
+    padding: 10px 100px;
+    background: #07080B;
+    
+}
+.navbar .logo{
+    color: #FEC544;
+    font-size: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.navbar ul li span{
+    color: #FEC544;
+    border-left: 1px solid #A9ADB8;
+    padding-left: 25px;
+    padding-right: 5px;
+    text-align: center;
+}
+.navbar ul li a{
+    color: #A9ADB8;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li a:hover{
+    color: #FEC544;
+}
+
+/* Showcase content section */
+.showcase-text{
+    max-width: 800px;
+    padding-top: 250px;
+    padding-left: 120px;
+    color: #fff;
+}
+ .showcase-text .text-1{
+    font-size: 27px;
+}
+.showcase-text .text-2{
+    font-size: 75px;
+    font-weight: 700;
+}
+.showcase-text .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    font-weight: 700;
+}
+.showcase-text .text-3 span{
+    color: #FEC544;
+}
+.showcase-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    overflow: hidden;
+}
+    
+
+
+
+
+/* About section content */
+
+#about{
+    background: #07080B;
+}
+
+.about .title::before{
+    background: #FEC544;
+}
+.about .title::after{
+    background: #FEC544;
+}
+
+.about h1{
+    color: #6e6e70;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(20px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+
+.about h5{
+    font-weight: 700;
+    transform: translateY(-65px);
+}
+
+.about .about-content .column{
+    margin-top: 40px;
+}
+.about .about-content,
+.services .service-content,
+.skills .skill-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-60px);
+}
+
+.about .about-content .left{
+    width: 55%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.about .about-content .left img{
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about .about-content .right{
+    width: 45%;
+    color: #A9ADB8;
+}
+
+.about .about-content .right .text{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right .text span{
+    color: #FEC544;
+}
+.about .about-content .right .table{
+    width: 500px;
+    padding: 10px 0;
+    margin-left: 0px;
+}
+.about .about-content .right .table td{
+    padding: 10px;
+}
+
+/* Services section styling */
+
+#services{
+    color: #A9ADB8;
+    background: #FEC544;
+}
+
+.services h5{
+    font-weight: 700;
+    color: #07080B;
+    transform: translateY(-65px);
+}
+
+.services h1{
+    color: #07080B;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(23px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+
+.services .service-content .main{
+    width: calc(30% - 20px);
+    min-height: 450px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.service{
+    background: #07080B;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px -15px #07080B;
+    transition: transform 0.8s;
+}
+.service-logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #07080B;
+    border: 18px solid #FEC544;
+    transform: transform 1s;
+}
+.service-logo i{
+    color: #FEC544;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.service h4{
+    height: 28px;
+    width: 80%;
+    background: #07080B;
+    margin: 60px auto;
+    position: relative;
+}
+.service h4::after{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #07080B , #FEC544 );
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+.service h4::before{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #FEC544 , #07080B);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.shadowone{
+    height: 200px;
+    width: 80%;
+    background: #07080B;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px #07080B;
+    transition: transform 0.8s;
+}
+.shadowtwo{
+    height: 200px;
+    width: 64%;
+    background: #07080B;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+}
+
+.main:hover .service{
+    transform: translateY(-50px);
+}
+.main:hover .shadowone{
+    transform: translateY(-25px);
+}
+
+/* My Skills Section */
+
+#skills{
+    background: #07080B;
+}
+
+.skills h1{
+    color: #6e6e70;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(20px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+.skills h5{
+    font-weight: 700;
+    transform: translateY(-65px);
+}
+.skills .title::before{
+    background: #FEC544;
+}
+.skills .title::after{
+    background: #FEC544;
+}
+
+.skills .skill-content .column{
+    margin-top: 40px;
+    width: calc(50% - 50px);
+}
+
+.skills .skill-content .left .text{
+    font-size: 27px;
+    font-weight: 700;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: #FEC544;
+}
+.skills .skill-content .left p{
+    color: #A9ADB8;
+    text-align: justify;
+    line-height: 1.4;
+    padding-top: 15px;
+}
+.skills .skill-content .left a{
+    display: inline-block;
+    background: #FEC544;
+    color: #07080B;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid #FEC544;
+    transition: all 0.3s ease;
+}
+.skills .skill-content .left a:hover{
+    color: #FEC544;
+    background: none;
+}
+.skills .skill-content .right .bars{
+    margin-bottom: 20px;
+}
+.skills .skill-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+    color: #A9ADB8;
+}
+.skills .skill-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skill-content .right .line{
+    height: 2px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skill-content .right .line::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #FEC544;
+}
+
+.skills .skill-content .right .ps::before{
+    width: 65%;
+}
+.skills .skill-content .right .mg::before{
+    width: 80%;
+}
+.skills .skill-content .right .axd::before{
+    width: 50%;
+}
+.skills .skill-content .right .uxd::before{
+    width: 90%;
+}
+.skills .skill-content .right .html::before{
+    width: 99%;
+}
+.skills .skill-content .right .dm::before{
+    width: 56%;
+}
+
+/* Team section styling */
+
+#teams{
+    color: #A9ADB8;
+    background: #FEC544;
+}
+
+.teams h5{
+    font-weight: 700;
+    color: #07080B;
+    transform: translateY(-65px);
+}
+
+.teams h1{
+    color: #07080B;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(23px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+
+.teams .carousel .card{
+    background: #07080B;
+    border-radius: 5px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover{
+    background: #15151a;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #FEC544;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background: #07080B !important;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #07080B;
+    transition: all 0.3s ease;
+}
+
+
+/* Contact Me Section */
+
+section{
+    padding: 40px 0;
+    background: #07080B;
+}
+
+.contact h1{
+    color: #6e6e70;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(20px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+.contact h5{
+    font-weight: 700;
+    transform: translateY(-65px);
+}
+.contact .title::before{
+    background: #FEC544;
+}
+.contact .title::after{
+    background: #FEC544;
+}
+.contact .contact-content .column{
+    margin-top: 40px;
+    width: calc(50% - 50px);
+}
+.contact .contact-content .left h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #A9ADB8;
+}
+.contact .contact-content .left .form-group input{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #A9ADB8;
+    background: #fff;
+    border-radius: 5px;
+}
+.contact .contact-content .left .form-group textarea{
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.contact .contact-content .left .btn-md{
+    padding: 8px 18px;
+    font-size: 16px;
+}
+
+.contact .contact-content .right{
+    color: #A9ADB8;
+}
+.contact .contact-content .right h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.contact .contact-content .right p{
+    line-height: 1.6;
+}
+.contact .contact-content .right .items{
+    margin: 10px 0;
+}
+.contact .contact-content .right .items .item{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.contact .contact-content .right .items .item i{
+    padding: 16px;
+    border: 1px solid #A9ADB8;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.contact .contact-content .right .items .item span{
+    font-size: 14px;
+}
+.contact .contact-content .right .links{
+    overflow: hidden;
+    padding: 10px 0;
+}
+.contact .contact-content .right .links li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 15px;
+}
+.contact .contact-content .right .links li a{
+    color: #A9ADB8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.contact .contact-content .right .links li a:hover{
+    color: #FEC544;
+}
+#footer{
+    text-align: center;
+    background: #FEC544;
+    padding: 30px 0;
+    color: #07080B;
+    font-weight: 700;
+}
+
+
+/* Scroll up styling */
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    border: 1px solid #fff;
+    background: #07080B;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
+
+    </style>
+    
+
+
+    <div class="showcase">
+        <nav class="navbar">
+            <h1 class="logo"><span class="text-secondary"><i class=></i></span>Syed Hasnain Ali</h1>
+            
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#services">Web Development</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a><span class="text-secondary"><i class="bx bxs-phone bx-xs"></i></span>+3128689021</a></li>
+            </ul>
+            <!-- <div class="menu-btn">
+                <i class="bx bx-menu bx-md"></i>
+            </div> -->
+        </nav>
+
+        <div class="showcase-content">
+            <div class="showcase-text">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Syed Hasnain Ali</div>
+                <div class="text-3">And I'm a <span class="typing-1"></span></div>
+                <a href="#contact" class="btn-md">Hire me</a>
+            </div>
+        </div> 
+    </div>
+    
+    <!-- About Section Styling -->
+
+    <section id="about" class="about">
+        <h1>ABOUT ME</h1>
+        <div class="container">
+            <h5 class="title text-center m-heading text-secondary">ABOUT ME</h5>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="./images/hs.jpg">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Hasnain and I'm a <span class="typing-2"></span></div>
+                    <p>I am a Visual Designer with a strong focus on digital branding. Visual design seeks to attract, inspire, create desires and motivate people to respond to messages, with a view to making a favorable impact.</p>
+                    <table class="table">
+                        <tr>
+                            <td>Birthday</td>
+                            <td>:3, October</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>:+923128689021</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:contactsyedhasnain@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>From</td>
+                            <td>:Pakistan | Karachi</td>
+                        </tr>
+                        <tr>
+                            <td>Language</td>
+                            <td>:English, Urdu</td>
+                        </tr>
+                        <tr>
+                            <td>Freelance</td>
+                            <td>:Available</td>
+                        </tr>
+                    </table>
+                    <a href=https://www.mediafire.com/file/edqoi48jzqiyhd8/Syed_Hasnain_ali.pdf/file" class="btn-md">Download CV</a>
+                    <a href="Demo web2/index.html" class="btn-md">Web Demo 1</a>
+                    <a href="web3/index.html" class="btn-md">Web Demo 2</a>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Services Section Styling -->
+
+    <section class="services" id="services">
+        <h1>SERVICES</h1>
+        <div class="container">
+            <h5 class="title text-center m-heading text-secondary">SERVICES</h5>
+            <div class="service-content">
+               <div class="main">
+                   <div class="service">
+                       <div class="service-logo">
+                        <i class="bx bxl-wordpress bx-lg"></i>
+                       </div>
+                          <h4>Wordpress Web Design</h4>
+                          <p>Hey I wil create a wordpress website like blogger,E-commerce,portfolio,food shop And I can make whatever you want
+                        </p>
+                    </div>
+                 <div class="shadowone"></div>
+                 <div class="shadowtwo"></div>        
+               </div>
+               
+               <div class="main">
+                   <div class="service">
+                       <div class="service-logo">
+                        <i class="bx bxl-apple bx-lg"></i>
+                       </div>
+                          <h4>Graphic Designing</h4>
+                          <p>Graphic design visually communicates messages using software like Photoshop and Illustrator. Designers create logos, websites, and ads while prioritizing readability and brand consistency. It requires artistic vision and technical skills.And  if you want the work then contact me!</p>
+                    </div>
+                 <div class="shadowone"></div>
+                 <div class="shadowtwo"></div>        
+               </div>
+               
+               <div class="main">
+                <div class="service">
+                    <div class="service-logo">
+                     <i class="bx bxs-video-recording bx-lg"></i>
+                    </div>
+                       <h4>Basic Video Editing</h4>
+                       <p>I Edit Your Video In Filmora 12, Premier Pro I will do a Basic Video Editng If you Want Then Contact Me!</p>
+                 </div>
+              <div class="shadowone"></div>
+              <div class="shadowtwo"></div>        
+            </div>
+            
+         </div>
+     </div>
+ </section>
+    
+    <!-- Skills Section Styling -->
+
+    <section id="skills" class="skills">
+        <h1>MY SKILLS</h1>
+        <div class="container">
+            <h5 class="title text-center m-heading text-secondary">MY SKILLS</h5>
+            <div class="skill-content">
+                <div class="column left">
+                    <div class="text">
+                        Skills & Experiences
+                    </div>
+                    <p>
+                        I have a wide range of skills and experiences that make me valuable in different professional settings. I excel in communication, problem-solving, and leadership. I have expertise in [specific field/industry] and stay updated with the latest trends. I am adaptable, a good team player, and skilled in using technology. I am eager to contribute to the success of any organization or project.</p>
+                    <a href="#" class="btn-md">Read More</a>
+                </div>
+                <div class="column right">
+                   <div class="bars">
+                       <div class="info">
+                           <span>PhotoShop</span>
+                           <span>90%</span>
+                       </div>
+                       <div class="line ps"></div>
+                   </div>
+                   <div class="bars">
+                       <div class="info">
+                           <span>Ms Word</span>
+                           <span>100%</span>
+                       </div>
+                       <div class="line mg"></div>
+                   </div>
+                   <div class="bars">
+                       <div class="info">
+                           <span>AdobePremierPro</span>
+                           <span>50%</span>
+                       </div>
+                       <div class="line axd"></div>
+                   </div>
+                   <div class="bars">
+                       <div class="info">
+                           <span>Excel</span>
+                           <span>90%</span>
+                       </div>
+                       <div class="line uxd"></div>
+                   </div>
+                   <div class="bars">
+                       <div class="info">
+                           <span>HTML</span>
+                           <span>75%</span>
+                       </div>
+                       <div class="line html"></div>
+                   </div>
+                   <div class="bars">
+                       <div class="info">
+                           <span>Wordpress WebDevelopment</span>
+                           <span>95%</span>
+                       </div>
+                       <div class="line dm"></div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+<!-- Contact Me Section -->
+<section class="contact" id="contact">
+    <h1>CONTACT ME</h1>
+        <div class="container">
+            <h5 class="title text-center m-heading text-secondary">CONTACT ME</h5>
+            <div class="contact-content">
+                <div class="column left">
+                    <h2>Just Say Hello</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" placeholder="Your Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-md">Send Message</button>
+                    </form>
+                </div>
+                <div class="column right">
+                   <h2>Contact Info</h2>
+                   <p class="lead">Hey My Name Is SYED HASNAIN ALI If You Have any question contact me  via whatsapp and gmail!</p>
+                   <div class="items">
+                       <div class="item">
+                            <i class="bx bxs-envelope bx-xs"></i>
+                            <div class="text">
+                                 <h3>Email</h3>
+                                <p><span>contactsyedhasnain@gmail.com</span></p>
+                                <p><span>contact@knowledges.online</span></p>
+                             </div>
+                       </div>
+                       <div class="item">
+                            <i class="bx bxs-phone bx-xs"></i>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p><span>+923128689021</span></p>
+                                <p><span>03128689021</span></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <i class="bx bxs-map bx-xs"></i>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p><span>Pakistan Karachi,</span></p>
+                                <p><span>Mehmoodabad</span></p>
+                            </div>
+                        </div>
+                       </div>
+                       <div>
+                            <p>Visit my social profile and get connected</p>
+                            <ul class="links">
+                                <li><a href="https://knowledges.online/"><i class="bx bxl-dribbble bx-md"></i></a></li>
+                                <li><a href="https://www.instagram.com/hasnain_writes777/"><i class="bx bxl-instagram-alt bx-md"></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100076872717210&sk=photos_by"><i class="bx bxl-facebook bx-md"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UChRykt-YeH-3lCEydLxVGgw"><i class="bx bxl-youtube bx-md"></i></a></li>
+                            </ul>
+                     </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+</section>
+<footer id="footer">
+<p>&copy; 2023. syedhasnainali All Rights Reserved.</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+
+<script>
+    $(document).ready(function(){
+
+$(window).scroll(function(){
+
+    if(this.scrollY > 200){
+        $('.navbar').addClass("sticky");
+        }else{
+            $('.navbar').removeClass("sticky");
+            }
+
+      // Scrolling Button Btn
+      if(this.scrollY >500){
+        $('.scroll-up-btn').addClass("show");
+        }else{
+        $('.scroll-up-btn').removeClass("show");
+        }   
+});
+
+var typed = new Typed(".typing-1",{
+    strings: [
+        "YouTuber", "Developer", "Blogger",
+        "Designer", "Freelancer"
+    ],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+var typed = new Typed(".typing-2",{
+    strings: [
+        "YouTuber", "Developer", "Blogger",
+        "Designer", "Freelancer"
+    ],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+//slide-up script
+$('.scroll-up-btn').click(function(){
+    $('html').animate({scrollTop:0});
+});
+
+// owl carousel animation
+$('.carousel').owlCarousel({
+    margin: 20,
+    loop:true,
+    navigation:true,
+    autoplay: true,
+    autoplayTimeOut: 1000,
+    autoplayHoverPause: true,
+
+    responsive: {
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items: 2,
+            nav: false
+        },
+        1000:{
+            items: 3,
+            nav: false
+        }
+    }
+});
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
